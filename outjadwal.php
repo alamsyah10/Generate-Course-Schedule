@@ -262,10 +262,10 @@
 
      ?>
 
-     <div class="container">
+     <div class="container table-responsive" >
+       <h1 style="text-align:center">Jadwal Kuliah Qamu</h1>
 
-
-       <table border="1" class="table"style="width:100%">
+       <table border="1" class="table table-bordered table-sm table-striped table-hover"style="width:100%">
          <thead>
         <tr >
           <th scope="col" style="text-align:center"><strong>Jadwal</strong></th>
