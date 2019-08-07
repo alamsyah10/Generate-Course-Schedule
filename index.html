@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Belajar PHP</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <h1 class="title"> Jadwal Kuliah UGM </h1>
+
+      </div>
+      <ul class="list-group list-group-flush">
+        <li style="font-size:25px" class="list-group-item list-group-item-light"><strong>TATA CARA:</strong></li>
+        <li class="list-group-item">Buka dan Login di SIMASTER anda</li>
+        <li class="list-group-item"><a href="https://simaster.ugm.ac.id/akademik/mhs_jadwal_kuliah/view" target="_blank">Klik ini</a></li>
+        <li class="list-group-item">Ctrl+U</li>
+        <li class="list-group-item">Select dan Salin Semua Tulisannya</li>
+        <li class="list-group-item">Paste Hasil Salinannya di Form Yang Telah Disediakan</li>
+        <li class="list-group-item">Submit!</li>
+      </ul>
+      <form action="outjadwal.php" method="post">
+        <div class="form-group shadow-textarea">
+
+         <textarea name="name" class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="10" placeholder="Paste disini..."></textarea>
+        </div>
+         <input class="btn btn-primary" type="submit" value="Submit">
+      </form>
+    </div>
+
+
+
+
+  </body>
+</html>
