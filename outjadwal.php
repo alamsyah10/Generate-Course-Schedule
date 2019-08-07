@@ -263,6 +263,10 @@
      ?>
 
      <div class="container table-responsive" >
+       <form action="index.html" >
+         <button type="submit" class="btn btn-primary"> Kembali</button>
+
+       </form>
        <h1 style="text-align:center">Jadwal Kuliah Qamu</h1>
 
        <table border="1" class="table table-bordered table-sm table-striped table-hover"style="width:100%">
@@ -298,6 +302,8 @@
          </tbody>
        </table>
      </div>
+
+
   </body>
 
 
