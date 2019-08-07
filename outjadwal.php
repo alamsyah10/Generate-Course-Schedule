@@ -8,7 +8,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <?php
@@ -262,40 +262,42 @@
 
      ?>
 
+     <div class="container">
 
-     <table class="table"style="width:100%">
-       <thead>
-      <tr>
-        <th scope="col" style="text-align:center">Jadwal</th>
-        <th scope="col" style="text-align:center">Matkul</th>
-        <th scope="col" style="text-align:center">Ruang</th>
-        <th scope="col" style="text-align:center">Kelas</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
 
-        <?php
-          for ($i=0; $i < sizeof($matkul); $i++) {
-            echo "<th style=\"text-align:center\">";
-            echo $jadwal[$i];
-            echo "</th>";
-            echo "<th style=\"text-align:center\">";
-            echo $matkul[$i];
-            echo "</th>";
-            echo "<th style=\"text-align:center\">";
-            echo $ruang[$i];
-            echo "</th>";
-            echo "<th style=\"text-align:center\">";
-            echo $kelas[$i];
-            echo "</th>";
-            echo "</tr>";
-          }
+       <table border="1" class="table"style="width:100%">
+         <thead>
+        <tr >
+          <th scope="col" style="text-align:center"><strong>Jadwal</strong></th>
+          <th scope="col" style="text-align:center"><strong>Matkul</strong></th>
+          <th scope="col" style="text-align:center"><strong>Ruang</strong></th>
+          <th scope="col" style="text-align:center"><strong>Kelas</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
 
-         ?>
-       </tbody>
-     </table>
+          <?php
+            for ($i=0; $i < sizeof($matkul); $i++) {
+              echo "<th style=\"text-align:center\" >";
+              echo $jadwal[$i];
+              echo "</th>";
+              echo "<th style=\"text-align:center\">";
+              echo $matkul[$i];
+              echo "</th>";
+              echo "<th style=\"text-align:center\">";
+              echo $ruang[$i];
+              echo "</th>";
+              echo "<th style=\"text-align:center\">";
+              echo $kelas[$i];
+              echo "</th>";
+              echo "</tr>";
+            }
 
+           ?>
+         </tbody>
+       </table>
+     </div>
   </body>
 
 
